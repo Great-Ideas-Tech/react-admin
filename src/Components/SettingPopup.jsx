@@ -2,22 +2,22 @@ import React, { useState, useEffect } from "react";
 
 const themes = {
   default: {
-    navbarBg: "#374151",
+    navbarBg: "#9CA3AF  ",
     headerLogoBg: "#374151",
     sidebarBg: "#374151",
   },
   DarkTurquoise: {
-    navbarBg: "#00CED1",
+    navbarBg: "#17153B ",
     headerLogoBg: "#00CED1",
     sidebarBg: "#00CED1",
   },
   Ocean_Blue: {
-    navbarBg: "#179BAE",
+    navbarBg: "#B0C4DE ",
     headerLogoBg: "#179BAE",
     sidebarBg: "#179BAE ",
   },
   Warm_Copper: {
-    navbarBg: "#C5705D",
+    navbarBg: "#5DC5B2 ",
     headerLogoBg: "#C5705D",
     sidebarBg: "#C5705D",
   },
