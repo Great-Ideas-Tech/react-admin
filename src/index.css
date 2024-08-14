@@ -8,3 +8,14 @@
 .apexcharts-title-text , .apexcharts-toolbar{
     display:none !important;
 }
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .menu-content.open {
+    max-height: 1000px; /* or any large enough value */
+  }
+  

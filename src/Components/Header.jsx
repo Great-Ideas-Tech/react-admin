@@ -91,10 +91,10 @@ const Header = ({ toggleSidebar }) => {
           </div>
           <div className="relative">  
             <FaLayerGroup
-              className="text-white text-xl hover:scale-110 cursor-pointer transition-colors duration-200 ease-in-out"
+              className="text-white text-xl rounded-lg  hover:scale-110 cursor-pointer transition-colors duration-200 ease-in-out"
               onClick={() => handleDropdownToggle(quickActionsDropdownOpen, setQuickActionsDropdownOpen)}
             />
-            <QuickActionsDropdown show={quickActionsDropdownOpen} handleClose={handleLinkClick} />
+            <QuickActionsDropdown show={quickActionsDropdownOpen} handleClose={handleLinkClick}  />
           </div>
           <div className="relative">
             <div
