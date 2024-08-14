@@ -360,7 +360,7 @@ const Widget = () => {
       <div className="col-md-4">
         <div className="card card-secondary bg-secondary-gradient">
           <div className="card-body skew-shadow">
-            <img src="assets/img/visa.svg" height="12.5" alt="Visa Logo" />
+            <img src="/img/visa.svg" height="12.5" alt="Visa Logo" />
             <h2 className="py-4 mb-0">1234 **** **** 5678</h2>
             <div className="row">
               <div className="col-8 pe-0">
@@ -382,7 +382,7 @@ const Widget = () => {
       <div className="col-md-4">
         <div className="card card-secondary bg-secondary-gradient">
           <div className="card-body bubble-shadow">
-            <img src="assets/img/visa.svg" height="12.5" alt="Visa Logo" />
+            <img src="/img/visa.svg" height="12.5" alt="Visa Logo" />
             <h2 className="py-4 mb-0">1234 **** **** 5678</h2>
             <div className="row">
               <div className="col-8 pe-0">
@@ -404,7 +404,7 @@ const Widget = () => {
       <div className="col-md-4">
         <div className="card card-secondary bg-secondary-gradient">
           <div className="card-body curves-shadow">
-            <img src="assets/img/visa.svg" height="12.5" alt="Visa Logo" />
+            <img src="/img/visa.svg" height="12.5" alt="Visa Logo" />
             <h2 className="py-4 mb-0">1234 **** **** 5678</h2>
             <div className="row">
               <div className="col-8 pe-0">
