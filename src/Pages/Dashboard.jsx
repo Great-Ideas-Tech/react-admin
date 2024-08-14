@@ -2,6 +2,7 @@ import React from 'react'
 import SplineLineChart from './DashboardComponent/SplineLineChart '
 import Worldmap from './DashboardComponent/Worldmap'
 import Linechart from './DashboardComponent/Linechart'
+import SalesChart from './DashboardComponent/Saleschart'
 
 const Dashboard = () => {
   return (
@@ -172,8 +173,8 @@ const Dashboard = () => {
             <div className="mb-4 mt-2">
               <h1>$4,578.58</h1>
             </div>
-            <div className="pull-in">
-              <canvas id="dailySalesChart" />
+            <div className="pull-in "  >
+              <SalesChart  style={{height:"100", width:"100"}}/>
             </div>
           </div>
         </div>
@@ -223,7 +224,7 @@ const Dashboard = () => {
                         <td>
                           <div className="flag">
                             <img
-                              src="/public/flags/id.png"
+                              src="/flags/id.png"
                               alt="indonesia"
                             />
                           </div>
@@ -236,7 +237,7 @@ const Dashboard = () => {
                         <td>
                           <div className="flag">
                             <img
-                              src="/public/flags/us.png"
+                              src="/flags/us.png"
                               alt="united states"
                             />
                           </div>
@@ -249,7 +250,7 @@ const Dashboard = () => {
                         <td>
                           <div className="flag">
                             <img
-                              src="/public/flags/au.png"
+                              src="/flags/au.png"
                               alt="australia"
                             />
                           </div>
@@ -261,7 +262,7 @@ const Dashboard = () => {
                       <tr>
                         <td>
                           <div className="flag">
-                            <img src="/public/flags/ru.png" alt="russia" />
+                            <img src="/flags/ru.png" alt="russia" />
                           </div>
                         </td>
                         <td>Russia</td>
@@ -271,7 +272,7 @@ const Dashboard = () => {
                       <tr>
                         <td>
                           <div className="flag">
-                            <img src="/public/flags/cn.png" alt="china" />
+                            <img src="/flags/cn.png" alt="china" />
                           </div>
                         </td>
                         <td>China</td>
@@ -281,7 +282,7 @@ const Dashboard = () => {
                       <tr>
                         <td>
                           <div className="flag">
-                            <img src="/public/flags/br.png" alt="brazil" />
+                            <img src="/flags/br.png" alt="brazil" />
                           </div>
                         </td>
                         <td>Brasil</td>

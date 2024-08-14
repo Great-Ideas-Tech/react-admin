@@ -600,7 +600,7 @@ const Sidebar2 = () => {
                           <td>
                             <div className="flag">
                               <img
-                                src="/public/flags/id.png"
+                                src="/flags/id.png"
                                 alt="indonesia"
                               />
                             </div>
