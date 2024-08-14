@@ -3,6 +3,17 @@ import { Link } from 'react-router-dom';
 import * as SiIcons from 'react-icons/si';
 
 const Simplelineicon = () => {
+  const handleIconClick = (iconName) => {
+    // Copy the icon name to the clipboard
+    navigator.clipboard.writeText(iconName)
+      .then(() => {
+        alert(`${iconName} copied to clipboard!`); // Optional: Notify the user
+      })
+      .catch((error) => {
+        console.error('Failed to copy text: ', error);
+      });
+  };
+
   return (
     <div className="container mx-auto p-4">
       <div className="page-inner">
@@ -48,7 +59,11 @@ const Simplelineicon = () => {
                   {Object.keys(SiIcons).map((iconName) => {
                     const IconComponent = SiIcons[iconName];
                     return (
-                      <div key={iconName} className="text-center">
+                      <div
+                        key={iconName}
+                        className="text-center cursor-pointer"
+                        onClick={() => handleIconClick(iconName)}
+                      >
                         <IconComponent size={24} className="mx-auto text-gray-700 mb-2"/>
                         <p className="text-gray-600 text-xs truncate">{iconName}</p>
                       </div>

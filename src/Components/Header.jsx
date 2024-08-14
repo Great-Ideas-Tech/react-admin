@@ -98,10 +98,10 @@ const Header = ({ toggleSidebar }) => {
           </div>
           <div className="relative">
             <div
-              className="flex items-center text-xl space-x-2 cursor-pointer hover:scale-110  transition-colors duration-200 ease-in-out hover:bg-gray-200 p-2 rounded"
+              className="flex items-center text-xl space-x-2 cursor-pointer hover:scale-110  transition-colors duration-200 ease-in-out p-2 rounded"
               onClick={() => handleDropdownToggle(userDropdownOpen, setUserDropdownOpen)}
             >
-              <FaUserCircle className="text-white text-2xl  " />
+              <FaUserCircle className="text-white text-3xl  " />
               <span className="font-medium text-sm text-white">Hizrian</span>
             </div>
             <UserDropdown show={userDropdownOpen} handleClose={handleLinkClick} />
