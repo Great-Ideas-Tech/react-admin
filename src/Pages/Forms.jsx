@@ -363,7 +363,7 @@ const Forms = () => {
                             />
                             <figure className="imagecheck-figure">
                               <img
-                                src="../assets/img/examples/product1.jpg"
+                                src="../img/examples/product1.jpg"
                                 alt="title"
                                 className="imagecheck-image"
                               />
@@ -381,7 +381,7 @@ const Forms = () => {
                             />
                             <figure className="imagecheck-figure">
                               <img
-                                src="../assets/img/examples/product4.jpg"
+                                src="/img/examples/product4.jpg"
                                 alt="title"
                                 className="imagecheck-image"
                               />
@@ -398,7 +398,7 @@ const Forms = () => {
                             />
                             <figure className="imagecheck-figure">
                               <img
-                                src="../assets/img/examples/product3.jpg"
+                                src="/img/examples/product3.jpg"
                                 alt="title"
                                 className="imagecheck-image"
                               />

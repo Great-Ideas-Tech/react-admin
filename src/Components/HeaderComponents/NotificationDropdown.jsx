@@ -16,8 +16,8 @@ const NotificationDropdown = ({ show, handleClose }) => (
     <div className="max-h-60 overflow-y-auto">
       <a href="#" className="block px-4 py-2 hover:bg-gray-100" onClick={handleClose}>
         <div className="flex items-center">
-          <div className="flex-shrink-0 bg-blue-100 text-blue-600 p-2 rounded-full">
-            <FaUserPlus />
+          <div className="flex-shrink-0  p-2 rounded-full">
+          <img src="/img/jm_denis.jpg" alt="Profile" className="w-10 h-10 rounded-full object-cover" />
           </div>
           <div className="ml-3">
             <div className="font-medium text-gray-900">New user registered</div>

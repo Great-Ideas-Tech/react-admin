@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const UserDropdown = ({ show, handleClose }) => (
   <div
@@ -21,13 +22,13 @@ const UserDropdown = ({ show, handleClose }) => (
         <div>
           <h4 className="text-lg font-semibold">Hizrian</h4>
           <p className="text-sm text-gray-500">hello@example.com</p>
-          <a
-            href="profile.html"
+          <Link to='*'
+          
             className="mt-2 h-10 flex items-center justify-center w-24 bg-blue-500 text-white text-xs py-1 px-3 rounded hover:bg-blue-600"
             onClick={handleClose}
           >
             View Profile
-          </a>
+          </Link>
         </div>
       </div>
       <div className="border-t border-gray-200">

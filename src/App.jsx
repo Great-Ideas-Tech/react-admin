@@ -31,6 +31,7 @@ import Notifications from './Components/Responsive/Notifications';
 import QuickActions from './Components/Responsive/QuickActions';
 import User from './Components/Responsive/User';
 import SettingsPopup from './Components/SettingPopup';
+import NotFound from './Components/NotFound';
 
 
 
@@ -82,6 +83,7 @@ const App = () => {
           <Route path='/noti' element={<Notifications/>}/>
           <Route path='/quick' element={<QuickActions/>}/>
           <Route path='/user' element={<User/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
         </div>
 

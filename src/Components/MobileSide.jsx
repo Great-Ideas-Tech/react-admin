@@ -52,8 +52,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             onClick={() => setDashIsOpen(!dashIsOpen)}
             className="flex items-center text-white text-sm cursor-pointer hover:bg-gray-700 p-2 rounded transition-colors"
           >
-            <FaHome className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className=" text-sm  ml-6 flex-grow font-semibold ">Dashboard</p>
+            <FaHome className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="text-sm ml-6 flex-grow font-semibold transition-colors hover:text-gray-400">Dashboard</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${dashIsOpen ? 'rotate-180' : ''}`} />
           </Link>
           <div className={`menu-content ${dashIsOpen ? 'open' : ''}`}>
@@ -78,8 +78,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             onClick={() => setBaseIsOpen(!baseIsOpen)}
             className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
           >
-            <FaLayerGroup className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className="text-sm flex-grow font-semibold ml-6">Base</p>
+            <FaLayerGroup className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="text-sm flex-grow font-semibold ml-6 transition-colors hover:text-gray-400">Base</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${baseIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${baseIsOpen ? 'open' : ''}`}>
@@ -105,8 +105,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             onClick={() => setLayoutIsOpen(!layoutIsOpen)}
             className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
           >
-            <FaThList className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className="ml-6 text-sm font-semibold flex-grow">Sidebar Layouts</p>
+            <FaThList className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Sidebar Layouts</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${layoutIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${layoutIsOpen ? 'open' : ''}`}>
@@ -125,8 +125,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             onClick={() => setFormIsOpen(!formIsOpen)}
             className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
           >
-            <FaPenSquare className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className=" ml-6 text-sm font-semibold flex-grow">Forms</p>
+            <FaPenSquare className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Forms</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${formIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${formIsOpen ? 'open' : ''}`}>
@@ -144,8 +144,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             onClick={() => setTableIsOpen(!tableIsOpen)}
             className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
           >
-            <FaTable className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className=" text-sm flex-grow  font-semibold ml-6">Tables</p>
+            <FaTable className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Tables</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${tableIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${tableIsOpen ? 'open' : ''}`}>
@@ -164,8 +164,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             onClick={() => setMapIsOpen(!mapIsOpen)}
             className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
           >
-            <FaMap className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className=" text-sm flex-grow ml-6 font-semibold">Maps</p>
+            <FaMap className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Maps</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${mapIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${mapIsOpen ? 'open' : ''}`}>
@@ -184,8 +184,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             onClick={() => setChartIsOpen(!chartIsOpen)}
             className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
           >
-            <FaChartBar className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className="ml-6 text-sm font-semibold flex-grow">Charts</p>
+            <FaChartBar className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Charts</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${chartIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${chartIsOpen ? 'open' : ''}`}>
@@ -202,8 +202,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <Link to='/widget' onClick={closeSidebar}>
             <button className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors">
-              <FaTh className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-              <p className="ml-6 text-sm font-semibold flex-grow">Widgets</p>
+              <FaTh className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+              <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Widgets</p>
               <span className="badge badge-success mb-3">4</span>
             </button>
           </Link>
@@ -212,8 +212,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         {/* Documentation */}
         <li>
           <button className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors">
-            <FaFileAlt className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className="ml-6 text-sm font-semibold flex-grow">Documentation</p>
+            <FaFileAlt className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Documentation</p>
             <span className="badge badge-success mb-3">1</span>
           </button>
         </li>
@@ -222,17 +222,16 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <button
             onClick={() => setMenuIsOpen(!menuIsOpen)}
-            className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm w-full text-left hover:text-gray-400 p-2 rounded transition-colors"
           >
-            <FaThLarge className='text-gray-500 mb-3 hover:text-purple-800 text-lg' />
-            <p className="ml-6 text-sm font-semibold flex-grow">Menu Levels</p>
+            <FaThLarge className='text-gray-500 mb-3 transition-colors hover:text-purple-800 text-lg' />
+            <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Menu Levels</p>
             <FaCaretDown className={`ml-auto mb-3 transition-transform ${menuIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${menuIsOpen ? 'open' : ''}`}>
             {menuIsOpen && (
               <ul className="pl-8 mt-2 space-y-2 flex flex-col gap-4 mb-3 ml-8">
                 <li><Link to='/level1' className="text-white font-semibold text-sm" onClick={closeSidebar}>Level 1</Link></li>
-               
               </ul>
             )}
           </div>

@@ -20,7 +20,7 @@ const Sidebar = () => {
                         <h1 className="font-bold text-3xl font-serif text-white">GREAT Idea :)</h1>
                     </Link>
                     <button className="topbar-toggler more">
-                        <i className="gg-more-vertical-alt" />
+                        <i className="gg-more-vertical-alt text-white" />
                     </button>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const Sidebar = () => {
                         >
                             <ul>
                                 <li>
-                                    <Link to="../demo1/index.html" style={{ color: '#fff' }}>
+                                    <Link to="*" className="text-white">
                                         Dashboard 1
                                     </Link>
                                 </li>
@@ -45,9 +45,9 @@ const Sidebar = () => {
 
                         <li className="nav-section">
                             <span className="sidebar-mini-icon">
-                                <i className="fa fa-ellipsis-h" />
+                                <i className="fa fa-ellipsis-h text-white" />
                             </span>
-                            <h4 className="text-section">Components</h4>
+                            <h4 className="text-section text-white">Components</h4>
                         </li>
 
                         <SidebarItem
@@ -154,7 +154,7 @@ const Sidebar = () => {
 const SidebarItem = ({ title, iconClass, isOpen, onClick, children }) => (
     <li className="nav-item">
         <a onClick={onClick} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', padding: '10px', color: '#fff' }}>
-            {iconClass && <i className={iconClass} />}
+            {iconClass && <i className={`${iconClass} text-white`} />}
             <p style={{ marginLeft: '10px' }}>{title}</p>
             <span className="caret" style={{ marginLeft: 'auto', transition: 'transform 0.3s', transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)' }} />
         </a>
@@ -167,7 +167,7 @@ const SidebarItem = ({ title, iconClass, isOpen, onClick, children }) => (
 const SidebarLink = ({ to, text, iconClass, badgeText }) => (
     <li className="nav-item">
         <Link to={to} className="text-white hover:text-white" style={{ display: 'flex', alignItems: 'center', padding: '10px' }}>
-            {iconClass && <i className={iconClass} />}
+            {iconClass && <i className={`${iconClass} text-white`} />}
             <p style={{ marginLeft: '10px' }}>{text}</p>
             {badgeText && <span className="badge badge-success">{badgeText}</span>}
         </Link>
@@ -175,3 +175,4 @@ const SidebarLink = ({ to, text, iconClass, badgeText }) => (
 );
 
 export default Sidebar;
+    
