@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "sender": "Alice",
+      "message": "Hey there! How's everything going?",
+      "timestamp": "5 minutes ago"
+    },
+    {
+      "id": 2,
+      "sender": "Bob",
+      "message": "Don't forget about our meeting tomorrow.",
+      "timestamp": "20 minutes ago"
+    },
+    {
+      "id": 3,
+      "sender": "Charlie",
+      "message": "Can you review the document I sent?",
+      "timestamp": "1 hour ago"
+    },
+    {
+      "id": 4,
+      "sender": "David",
+      "message": "The report is ready for review.",
+      "timestamp": "2 hours ago"
+    },
+    {
+      "id": 5,
+      "sender": "Eva",
+      "message": "Let's catch up later today.",
+      "timestamp": "3 hours ago"
+    }
+  ]
+  

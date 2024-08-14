@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.apexcharts-title-text , .apexcharts-toolbar{
+    display:none !important;
+}
