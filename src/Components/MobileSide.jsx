@@ -32,9 +32,10 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
 
   return (
     <div 
-      style={{ background: 'var(--header-logo-bg)' }} 
+      style={{ background: 'var(--header-logo-bg)',overflowY: 'scroll', 
+        scrollbarWidth: 'none'  }} 
       ref={sidebarRef} 
-      className={`fixed top-0 left-0 bg-gray-800 md:hidden text-white text-sm w-[250px] h-full transition-transform duration-300 z-[998] overflow-y-auto pt-6 ${isOpen ? 'translate-x-0' : '-translate-x-full'} smooth-scroll`}
+      className={`fixed top-0 left-0 bg-gray-800 md:hidden  text-white text-sm w-[250px] h-full transition-transform duration-300 z-[998] overflow-y-auto mr-6 pt-6 ${isOpen ? 'translate-x-0' : '-translate-x-full'} smooth-scroll`}
     >
       <div className="px-4 mb-6">
         <Link to=''>
@@ -54,7 +55,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaHome className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="text-sm ml-6 flex-grow font-semibold transition-colors hover:text-gray-400">Dashboard</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${dashIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${dashIsOpen ? 'rotate-180' : ''}`} />
           </Link>
           <div className={`menu-content ${dashIsOpen ? 'open' : ''}`}>
             {dashIsOpen && (
@@ -80,7 +81,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaLayerGroup className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="text-sm flex-grow font-semibold ml-6 transition-colors hover:text-gray-400">Base</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${baseIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${baseIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${baseIsOpen ? 'open' : ''}`}>
             {baseIsOpen && (
@@ -107,7 +108,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaThList className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Sidebar Layouts</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${layoutIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${layoutIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${layoutIsOpen ? 'open' : ''}`}>
             {layoutIsOpen && (
@@ -127,7 +128,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaPenSquare className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Forms</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${formIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${formIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${formIsOpen ? 'open' : ''}`}>
             {formIsOpen && (
@@ -146,7 +147,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaTable className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Tables</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${tableIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${tableIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${tableIsOpen ? 'open' : ''}`}>
             {tableIsOpen && (
@@ -166,7 +167,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaMap className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Maps</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${mapIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${mapIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${mapIsOpen ? 'open' : ''}`}>
             {mapIsOpen && (
@@ -186,7 +187,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaChartBar className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Charts</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${chartIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${chartIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${chartIsOpen ? 'open' : ''}`}>
             {chartIsOpen && (
@@ -203,8 +204,8 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           <Link to='/widget' onClick={closeSidebar}>
             <button className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors">
               <FaTh className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
-              <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Widgets</p>
-              <span className="badge badge-success mb-3">4</span>
+              <p className="ml-6  text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Widgets</p>
+              <span className="badge badge-success mb-3 mr-6">4</span>
             </button>
           </Link>
         </li>
@@ -214,7 +215,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           <button className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors">
             <FaFileAlt className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Documentation</p>
-            <span className="badge badge-success mb-3">1</span>
+            <span className="badge badge-success mb-3 mr-6">1</span>
           </button>
         </li>
 
@@ -226,7 +227,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           >
             <FaThLarge className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Menu Levels</p>
-            <FaCaretDown className={`ml-auto mb-3 transition-transform ${menuIsOpen ? 'rotate-180' : ''}`} />
+            <FaCaretDown className={`ml-auto mr-6 mb-3 transition-transform ${menuIsOpen ? 'rotate-180' : ''}`} />
           </button>
           <div className={`menu-content ${menuIsOpen ? 'open' : ''}`}>
             {menuIsOpen && (

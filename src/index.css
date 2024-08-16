@@ -22,3 +22,15 @@
   max-height: 500px; /* Set a value large enough to fit your content */
   transition: max-height 0.6s ease-in-out;
 }
+
+/* Hide scrollbar for WebKit browsers */
+.mob-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.mob-sidebar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+

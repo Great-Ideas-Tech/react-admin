@@ -23,9 +23,7 @@ import Widget from './Pages/Widget'
 import Gridsystem from './Pages/Gridsystem'
 import Chart from './Pages/Chart'
 import Sparkline from './Pages/Sparkline'
-// import Mobileheader from './Components/Mobilheader';
 import Mobilesidebar from './Components/MobileSide';
-import Test from './Pages/Test';
 import MessageDropdown from './Components/Responsive/Messages';
 import Notifications from './Components/Responsive/Notifications';
 import QuickActions from './Components/Responsive/QuickActions';
@@ -77,8 +75,6 @@ const App = () => {
           <Route path='/grid' element={<Gridsystem/>}/>
           <Route path='/chart' element={<Chart/>}/>
           <Route path='/spark' element={<Sparkline/>}/>
-          {/* <Route path='/header' element={<Mobileheader/>}/> */}
-          <Route path='/test' element={<Test/>}/>
           <Route path='/mess' element={<MessageDropdown/>}/>
           <Route path='/noti' element={<Notifications/>}/>
           <Route path='/quick' element={<QuickActions/>}/>
