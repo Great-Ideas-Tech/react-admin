@@ -33,20 +33,20 @@ const UserDropdown = ({ show, handleClose }) => (
       </div>
       <div className="border-t border-gray-200">
         {[
-          { label: 'My Profile', href: '#' },
-          { label: 'My Balance', href: '#' },
-          { label: 'Inbox', href: '#' },
-          { label: 'Account Setting', href: '#' },
-          { label: 'Logout', href: '#' }
-        ].map(({ label, href }) => (
-          <a
+          { label: 'My Profile', to: '*' },
+          { label: 'My Balance', to: '*' },
+          { label: 'Inbox', to: '*' },
+          { label: 'Account Setting', to: '*' },
+          { label: 'Logout', to: '*' }
+        ].map(({ label, to }) => (
+          <Link
             key={label}
-            href={href}
+            to='*'
             className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
             onClick={handleClose}
           >
             {label}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

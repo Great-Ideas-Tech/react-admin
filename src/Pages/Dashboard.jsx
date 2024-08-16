@@ -3,6 +3,7 @@ import SplineLineChart from './DashboardComponent/SplineLineChart '
 import Worldmap from './DashboardComponent/Worldmap'
 import Linechart from './DashboardComponent/Linechart'
 import SalesChart from './DashboardComponent/Saleschart'
+import { Link } from 'react-router-dom'
 
 const Dashboard = () => {
   return (
@@ -14,12 +15,12 @@ const Dashboard = () => {
         <h6 className="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
       </div>
       <div className="ms-md-auto py-2 py-md-0">
-        <a href="#" className="btn btn-label-info btn-round me-2">
+        <Link to="*" className="btn btn-label-info btn-round me-2">
           Manage
-        </a>
-        <a href="#" className="btn btn-primary btn-round">
+        </Link>
+        <Link to="*" className="btn btn-primary btn-round">
           Add Customer
-        </a>
+        </Link>
       </div>
     </div>
     <div className="row">
@@ -107,21 +108,21 @@ const Dashboard = () => {
             <div className="card-head-row">
               <div className="card-title">User Statistics</div>
               <div className="card-tools">
-                <a
-                  href="#"
+                <Link
+                  to="*"
                   className="btn btn-label-success btn-round btn-sm me-2"
                 >
                   <span className="btn-label">
                     <i className="fa fa-pencil" />
                   </span>
                   Export
-                </a>
-                <a href="#" className="btn btn-label-info btn-round btn-sm">
+                </Link>
+                <Link to="*" className="btn btn-label-info btn-round btn-sm">
                   <span className="btn-label">
                     <i className="fa fa-print" />
                   </span>
                   Print
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -154,15 +155,15 @@ const Dashboard = () => {
                     className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton"
                   >
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Another action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Something else here
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -330,15 +331,15 @@ const Dashboard = () => {
                     className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton"
                   >
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Another action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Something else here
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -477,15 +478,15 @@ const Dashboard = () => {
                     className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton"
                   >
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Another action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Something else here
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

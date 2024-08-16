@@ -12,7 +12,7 @@ const Header = ({ toggleSidebar }) => {
   const [quickActionsDropdownOpen, setQuickActionsDropdownOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-  
+
   const headerRef = useRef(null);
 
   const closeAllDropdowns = () => {
@@ -55,12 +55,13 @@ const Header = ({ toggleSidebar }) => {
   }, []);
 
   return (
-    <header ref={headerRef} style={{background:'var(--navbar-bg)'}} className="md:bg-white  shadow-sm py-3 px-6 flex justify-between items-center">
-      <div className='md:hidden '>
+    <header ref={headerRef} style={{ background: 'var(--navbar-bg)' }} className="md:bg-white shadow-sm py-3 px-6 flex justify-between items-center">
+      <div className='md:hidden'>
         <Link to='/'>
-         <h1 className='text-xl font-bold font-serif text-white flex items-center justify-center '>GREAT Idea :)</h1>
+          <h1 className='text-xl font-bold font-serif text-white flex items-center justify-center'>GREAT Idea :)</h1>
         </Link>
       </div>
+      
       <div className="flex items-center">
         <div className="relative flex items-center md:m-auto ml-4">
           <FaSearch className="absolute top-3 left-3 text-gray-500 md:mt-1" />
@@ -87,21 +88,21 @@ const Header = ({ toggleSidebar }) => {
               onClick={() => handleDropdownToggle(notificationDropdownOpen, setNotificationDropdownOpen)}
             />
             <NotificationDropdown show={notificationDropdownOpen} handleClose={handleLinkClick} />
-            <span className="absolute -top-1 -right-2 bg-green-500 text-white  text-xs rounded-full w-4 h-4 flex items-center justify-center">4</span>
+            <span className="absolute -top-1 -right-2 bg-green-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">4</span>
           </div>
-          <div className="relative">  
+          <div className="relative">
             <FaLayerGroup
-              className="text-white text-xl rounded-lg  hover:scale-110 cursor-pointer transition-colors duration-200 ease-in-out"
+              className="text-white text-xl rounded-lg hover:scale-110 cursor-pointer transition-colors duration-200 ease-in-out"
               onClick={() => handleDropdownToggle(quickActionsDropdownOpen, setQuickActionsDropdownOpen)}
             />
-            <QuickActionsDropdown show={quickActionsDropdownOpen} handleClose={handleLinkClick}  />
+            <QuickActionsDropdown show={quickActionsDropdownOpen} handleClose={handleLinkClick} />
           </div>
           <div className="relative">
             <div
-              className="flex items-center text-xl space-x-2 cursor-pointer hover:scale-110  transition-colors duration-200 ease-in-out p-2 rounded"
+              className="flex items-center text-xl space-x-2 cursor-pointer hover:scale-110 transition-colors duration-200 ease-in-out p-2 rounded"
               onClick={() => handleDropdownToggle(userDropdownOpen, setUserDropdownOpen)}
             >
-              <FaUserCircle className="text-white text-3xl  " />
+              <FaUserCircle className="text-white text-3xl" />
               <span className="font-medium text-sm text-white">Hizrian</span>
             </div>
             <UserDropdown show={userDropdownOpen} handleClose={handleLinkClick} />
@@ -134,7 +135,7 @@ const Header = ({ toggleSidebar }) => {
         <div className="md:hidden">
           <FaBars
             className="text-white text-2xl hover:text-blue-500 cursor-pointer transition-colors duration-200 ease-in-out"
-            onClick={toggleSidebar}
+            onClick={toggleSidebar} // Trigger sidebar toggle
           />
         </div>
       </div>

@@ -21,21 +21,21 @@ const Simplelineicon = () => {
           <h3 className="text-lg font-bold mb-2">Icons</h3>
           <ul className="breadcrumbs flex items-center text-sm text-gray-600">
             <li className="nav-home">
-              <a href="#" className="text-gray-600 hover:text-gray-800">
+              <Link to="*" className="text-gray-600 hover:text-gray-800">
                 <i className="icon-home" />
-              </a>
+              </Link>
             </li>
             <li className="separator mx-2">
               <i className="icon-arrow-right" />
             </li>
             <li className="nav-item">
-              <a href="#" className="text-gray-600 hover:text-gray-800">Base</a>
+              <Link to="*" className="text-gray-600 hover:text-gray-800">Base</Link>
             </li>
             <li className="separator mx-2">
               <i className="icon-arrow-right" />
             </li>
             <li className="nav-item">
-              <a href="#" className="text-gray-600 hover:text-gray-800">Line Awesome</a>
+              <Link to="*" className="text-gray-600 hover:text-gray-800">Line Awesome</Link>
             </li>
           </ul>
         </div>

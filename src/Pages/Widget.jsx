@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Widget = () => {
   return (
@@ -812,9 +813,9 @@ const Widget = () => {
             <div>
               <h5 className="mb-1">
                 <b>
-                  <a href="#">
+                  <Link to="*">
                     132 <small>Sales</small>
-                  </a>
+                  </Link>
                 </b>
               </h5>
               <small className="text-muted">12 waiting payments</small>
@@ -831,9 +832,9 @@ const Widget = () => {
             <div>
               <h5 className="mb-1">
                 <b>
-                  <a href="#">
+                  <Link to="*">
                     78 <small>Orders</small>
-                  </a>
+                  </Link>
                 </b>
               </h5>
               <small className="text-muted">32 shipped</small>
@@ -850,9 +851,9 @@ const Widget = () => {
             <div>
               <h5 className="mb-1">
                 <b>
-                  <a href="#">
+                  <Link to="*">
                     1,352 <small>Members</small>
-                  </a>
+                  </Link>
                 </b>
               </h5>
               <small className="text-muted">163 registered today</small>
@@ -869,9 +870,9 @@ const Widget = () => {
             <div>
               <h5 className="mb-1">
                 <b>
-                  <a href="#">
+                  <Link to="*">
                     132 <small>Comments</small>
-                  </a>
+                  </Link>
                 </b>
               </h5>
               <small className="text-muted">16 waiting</small>
@@ -978,16 +979,16 @@ const Widget = () => {
                   </button>
                   <ul className="dropdown-menu" role="menu">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="*">
                         Action
-                      </a>
-                      <a className="dropdown-item" href="#">
+                      </Link>
+                      <Link className="dropdown-item" to="*">
                         Another action
-                      </a>
+                      </Link>
                       <div className="dropdown-divider" />
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="*">
                         Something else here
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -1174,12 +1175,12 @@ const Widget = () => {
             <li className="disable">10 Subdomains</li>
             <li className="disable">15 Domains</li>
           </ul>
-          <a
-            href="#"
+          <Link
+            to="*"
             className="btn btn-success btn-border btn-lg w-75 fw-bold mb-3"
           >
             Sign up
-          </a>
+          </Link>
         </div>
       </div>
       <div className="col-md-3 ps-md-0 pe-md-0">
@@ -1204,12 +1205,12 @@ const Widget = () => {
             <li>15 Subdomains</li>
             <li className="disable">20 Domains</li>
           </ul>
-          <a
-            href="#"
+          <Link
+            to="*"
             className="btn btn-primary btn-border btn-lg w-75 fw-bold mb-3"
           >
             Sign up
-          </a>
+          </Link>
         </div>
       </div>
       <div className="col-md-3 pe-md-0">
@@ -1234,12 +1235,12 @@ const Widget = () => {
             <li>20 Subdomains</li>
             <li>25 Domains</li>
           </ul>
-          <a
-            href="#"
+          <Link
+            to="*"
             className="btn btn-secondary btn-border btn-lg w-75 fw-bold mb-3"
           >
             Sign up
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -1338,18 +1339,18 @@ const Widget = () => {
             </div>
             <div className="separator-solid" />
             <p className="card-category text-info mb-1">
-              <a href="#">Design</a>
+              <Link to="*">Design</Link>
             </p>
             <h3 className="card-title">
-              <a href="#"> Best Design Resources This Week </a>
+              <Link to="*"> Best Design Resources This Week </Link>
             </h3>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" className="btn btn-primary btn-rounded btn-sm">
+            <Link to="*" className="btn btn-primary btn-rounded btn-sm">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -1377,7 +1378,7 @@ const Widget = () => {
               <div className="social-media">
                 <a
                   className="btn btn-info btn-twitter btn-sm btn-link"
-                  href="#"
+                Link to="*"
                 >
                   <span className="btn-label just-icon">
                     <i className="icon-social-twitter" />
@@ -1386,7 +1387,7 @@ const Widget = () => {
                 <a
                   className="btn btn-primary btn-sm btn-link"
                   rel="publisher"
-                  href="#"
+                Link to="*"
                 >
                   <span className="btn-label just-icon">
                     <i className="icon-social-facebook" />
@@ -1395,7 +1396,7 @@ const Widget = () => {
                 <a
                   className="btn btn-danger btn-sm btn-link"
                   rel="publisher"
-                  href="#"
+                Link to="*"
                 >
                   <span className="btn-label just-icon">
                     <i className="icon-social-instagram" />
@@ -1403,9 +1404,9 @@ const Widget = () => {
                 </a>
               </div>
               <div className="view-profile">
-                <a href="#" className="btn btn-secondary w-100">
+                <Link to="*" className="btn btn-secondary w-100">
                   View Full Profile
-                </a>
+                </Link>
               </div>
             </div>
           </div>

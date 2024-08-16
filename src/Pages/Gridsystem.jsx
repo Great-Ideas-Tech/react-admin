@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Gridsystem = () => {
   return (
@@ -8,21 +9,21 @@ const Gridsystem = () => {
       <h3 className="fw-bold mb-3">Grid System</h3>
       <ul className="breadcrumbs mb-3">
         <li className="nav-home">
-          <a href="#">
+          <Link to="*">
             <i className="icon-home" />
-          </a>
+          </Link>
         </li>
         <li className="separator">
           <i className="icon-arrow-right" />
         </li>
         <li className="nav-item">
-          <a href="#">Base</a>
+          <Link to="*">Base</Link>
         </li>
         <li className="separator">
           <i className="icon-arrow-right" />
         </li>
         <li className="nav-item">
-          <a href="#">Grid System</a>
+          <Link to="*">Grid System</Link>
         </li>
       </ul>
     </div>
@@ -337,16 +338,16 @@ const Gridsystem = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="*">
               {" "}
               Help{" "}
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link className="nav-link" to="*">
               {" "}
               Licenses{" "}
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

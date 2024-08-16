@@ -50,7 +50,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
           <Link 
             to='/'
             onClick={() => setDashIsOpen(!dashIsOpen)}
-            className="flex items-center text-white text-sm cursor-pointer hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm cursor-pointer p-2 rounded transition-colors"
           >
             <FaHome className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="text-sm ml-6 flex-grow font-semibold transition-colors hover:text-gray-400">Dashboard</p>
@@ -60,7 +60,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
             {dashIsOpen && (
               <ul className="pl-8 mt-2 space-y-2">
                 <li className='ml-8'>
-                  <a href="../demo1/index.html" className="text-white font-semibold text-sm">Dashboard 1</a>
+                  <Link onClick={closeSidebar} to="*" className="text-white font-semibold text-sm">Dashboard 1</Link>
                 </li>
               </ul>
             )}
@@ -76,7 +76,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <button
             onClick={() => setBaseIsOpen(!baseIsOpen)}
-            className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors"
           >
             <FaLayerGroup className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="text-sm flex-grow font-semibold ml-6 transition-colors hover:text-gray-400">Base</p>
@@ -103,7 +103,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <button
             onClick={() => setLayoutIsOpen(!layoutIsOpen)}
-            className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors"
           >
             <FaThList className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Sidebar Layouts</p>
@@ -123,7 +123,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <button
             onClick={() => setFormIsOpen(!formIsOpen)}
-            className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors"
           >
             <FaPenSquare className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Forms</p>
@@ -142,7 +142,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <button
             onClick={() => setTableIsOpen(!tableIsOpen)}
-            className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors"
           >
             <FaTable className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Tables</p>
@@ -162,7 +162,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <button
             onClick={() => setMapIsOpen(!mapIsOpen)}
-            className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors"
           >
             <FaMap className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Maps</p>
@@ -182,7 +182,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         <li>
           <button
             onClick={() => setChartIsOpen(!chartIsOpen)}
-            className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors"
+            className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors"
           >
             <FaChartBar className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Charts</p>
@@ -201,7 +201,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
         {/* Widgets */}
         <li>
           <Link to='/widget' onClick={closeSidebar}>
-            <button className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors">
+            <button className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors">
               <FaTh className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
               <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Widgets</p>
               <span className="badge badge-success mb-3">4</span>
@@ -211,7 +211,7 @@ const Mobilesidebar = ({ isOpen, closeSidebar }) => {
 
         {/* Documentation */}
         <li>
-          <button className="flex items-center text-white text-sm w-full text-left hover:bg-gray-700 p-2 rounded transition-colors">
+          <button className="flex items-center text-white text-sm w-full text-left p-2 rounded transition-colors">
             <FaFileAlt className='text-white mb-3 transition-colors hover:text-purple-800 text-lg' />
             <p className="ml-6 text-sm font-semibold transition-colors hover:text-gray-400 flex-grow">Documentation</p>
             <span className="badge badge-success mb-3">1</span>

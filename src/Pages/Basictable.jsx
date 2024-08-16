@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Basictable = () => {
   return (
@@ -8,21 +9,21 @@ const Basictable = () => {
       <h3 className="fw-bold mb-3">Tables</h3>
       <ul className="breadcrumbs mb-3">
         <li className="nav-home">
-          <a href="#">
+          <Link to="*">
             <i className="icon-home" />
-          </a>
+          </Link>
         </li>
         <li className="separator">
           <i className="icon-arrow-right" />
         </li>
         <li className="nav-item">
-          <a href="#">Tables</a>
+          <Link to="*">Tables</Link>
         </li>
         <li className="separator">
           <i className="icon-arrow-right" />
         </li>
         <li className="nav-item">
-          <a href="#">Basic Tables</a>
+          <Link to="*">Basic Tables</Link>
         </li>
       </ul>
     </div>

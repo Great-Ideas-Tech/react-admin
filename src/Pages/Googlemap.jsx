@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Googlemap = () => {
   return (
@@ -8,21 +9,21 @@ const Googlemap = () => {
           <h3 className="fw-bold mb-3">Google Maps</h3>
           <ul className="breadcrumbs mb-3">
             <li className="nav-home">
-              <a href="/home">
+              <Link to="/home">
                 <i className="icon-home"></i>
-              </a>
+              </Link>
             </li>
             <li className="separator">
               <i className="icon-arrow-right"></i>
             </li>
             <li className="nav-item">
-              <a href="/maps">Maps</a>
+              <Link to="/maps">Maps</Link>
             </li>
             <li className="separator">
               <i className="icon-arrow-right"></i>
             </li>
             <li className="nav-item">
-              <a href="/google-maps">Google Maps</a>
+              <Link to="/google-maps">Google Maps</Link>
             </li>
           </ul>
         </div>

@@ -153,12 +153,35 @@ const Sidebar = () => {
 // Reusable components for Sidebar items and links
 const SidebarItem = ({ title, iconClass, isOpen, onClick, children }) => (
     <li className="nav-item">
-        <a onClick={onClick} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', padding: '10px', color: '#fff' }}>
+        <a
+            onClick={onClick}
+            style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '10px',
+                color: '#fff',
+            }}
+        >
             {iconClass && <i className={`${iconClass} text-white`} />}
             <p style={{ marginLeft: '10px' }}>{title}</p>
-            <span className="caret" style={{ marginLeft: 'auto', transition: 'transform 0.3s', transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)' }} />
+            <span
+                className="caret"
+                style={{
+                    marginLeft: 'auto',
+                    transition: 'transform 0.3s',
+                    transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)',
+                }}
+            />
         </a>
-        <div style={{ display: isOpen ? 'block' : 'none', paddingLeft: '20px', transition: 'all 0.3s ease-in-out' }}>
+        <div
+            style={{
+                maxHeight: isOpen ? '500px' : '0',
+                overflow: 'hidden',
+                transition: 'max-height 0.3s ease-in-out, padding 0.3s ease-in-out',
+                paddingLeft: isOpen ? '20px' : '0',
+            }}
+        >
             {children}
         </div>
     </li>
@@ -175,4 +198,3 @@ const SidebarLink = ({ to, text, iconClass, badgeText }) => (
 );
 
 export default Sidebar;
-    

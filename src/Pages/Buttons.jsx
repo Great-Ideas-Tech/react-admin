@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Buttons = () => {
   return (
@@ -8,21 +9,21 @@ const Buttons = () => {
       <h3 className="fw-bold mb-3">Buttons</h3>
       <ul className="breadcrumbs mb-3">
         <li className="nav-home">
-          <a href="#">
+          <Link to="*">
             <i className="icon-home" />
-          </a>
+          </Link>
         </li>
         <li className="separator">
           <i className="icon-arrow-right" />
         </li>
         <li className="nav-item">
-          <a href="#">Base</a>
+          <Link to="*">Base</Link>
         </li>
         <li className="separator">
           <i className="icon-arrow-right" />
         </li>
         <li className="nav-item">
-          <a href="#">Buttons</a>
+          <Link to="*">Buttons</Link>
         </li>
       </ul>
     </div>
@@ -243,16 +244,16 @@ const Buttons = () => {
                 </button>
                 <ul className="dropdown-menu" role="menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Another action
-                    </a>
+                    </Link>
                     <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Something else here
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -266,16 +267,16 @@ const Buttons = () => {
                 </button>
                 <ul className="dropdown-menu" role="menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Another action
-                    </a>
+                    </Link>
                     <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Something else here
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -291,16 +292,16 @@ const Buttons = () => {
                 </button>
                 <ul className="dropdown-menu" role="menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Another action
-                    </a>
+                    </Link>
                     <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Something else here
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -316,16 +317,16 @@ const Buttons = () => {
                 </button>
                 <ul className="dropdown-menu" role="menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Action
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" to="*">
                       Another action
-                    </a>
+                    </Link>
                     <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="*">
                       Something else here
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -358,24 +359,24 @@ const Buttons = () => {
           <div className="card-body">
             <ul className="nav nav-pills nav-primary gap-2">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link className="nav-link active" to="*">
                   Active
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="*">
                   Link
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="*">
                   Link
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" href="#">
+                <Link className="nav-link disabled" to="*">
                   Disabled
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -390,31 +391,31 @@ const Buttons = () => {
             <div className="demo">
               <ul className="pagination pg-primary gap-2">
                 <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Previous">
+                  <Link className="page-link" to="*" aria-label="Previous">
                     <span aria-hidden="true">«</span>
                     <span className="sr-only">Previous</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="page-item active">
-                  <a className="page-link" href="#">
+                  <Link className="page-link" to="*">
                     1
-                  </a>
+                  </Link>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">
+                  <Link className="page-link" to="*">
                     2
-                  </a>
+                  </Link>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#">
+                  <Link className="page-link" to="*">
                     3
-                  </a>
+                  </Link>
                 </li>
                 <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Next">
+                  <Link className="page-link" to="*" aria-label="Next">
                     <span aria-hidden="true">»</span>
                     <span className="sr-only">Next</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

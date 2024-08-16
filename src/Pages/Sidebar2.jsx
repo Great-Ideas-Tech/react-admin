@@ -2,6 +2,7 @@ import React from 'react'
 import SplineLineChart from './DashboardComponent/SplineLineChart '
 import Linechart from './DashboardComponent/Linechart'
 import Worldmap from './DashboardComponent/Worldmap'
+import { Link } from 'react-router-dom'
 
 const Sidebar2 = () => {
   return (
@@ -13,12 +14,12 @@ const Sidebar2 = () => {
           <h6 className="op-7 mb-2">GREAT Tdea Tech Admin Dashboard</h6>
         </div>
         <div className="ms-md-auto py-2 py-md-0">
-          <a href="#" className="btn btn-label-info btn-round me-2">
+          <Link to="*" className="btn btn-label-info btn-round me-2">
             Manage
-          </a>
-          <a href="#" className="btn btn-primary btn-round">
+          </Link>
+          <Link to=" * "className="btn btn-primary btn-round">
             Add Customer
-          </a>
+          </Link>
         </div>
       </div>
       <div className="row row-card-no-pd">
@@ -142,21 +143,21 @@ const Sidebar2 = () => {
               <div className="card-head-row">
                 <div className="card-title">User Statistics</div>
                 <div className="card-tools">
-                  <a
-                    href="#"
+                  <Link
+                    to="*"
                     className="btn btn-label-success btn-round btn-sm me-2"
                   >
                     <span className="btn-label">
                       <i className="fa fa-pencil" />
                     </span>
                     Export
-                  </a>
-                  <a href="#" className="btn btn-label-info btn-round btn-sm">
+                Link</Link>
+                  <Link to="*" className="btn btn-label-info btn-round btn-sm">
                     <span className="btn-label">
                       <i className="fa fa-print" />
                     </span>
                     Print
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -189,15 +190,15 @@ const Sidebar2 = () => {
                       className="dropdown-menu"
                       aria-labelledby="dropdownMenuButton"
                     >
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="*">
                         Action
-                      </a>
-                      <a className="dropdown-item" href="#">
+                      </Link>
+                      <Link className="dropdown-item" to="*">
                         Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
+                      </Link>
+                      <Link className="dropdown-item" to="*">
                         Something else here
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -707,15 +708,15 @@ const Sidebar2 = () => {
                       className="dropdown-menu"
                       aria-labelledby="dropdownMenuButton"
                     >
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="*">
                         Action
-                      </a>
-                      <a className="dropdown-item" href="#">
+                      </Link>
+                      <Link className="dropdown-item" to="*">
                         Another action
-                      </a>
-                      <a className="dropdown-item" href="#">
+                      </Link>
+                      <Link className="dropdown-item" to="*">
                         Something else here
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -729,7 +730,7 @@ const Sidebar2 = () => {
                   </time>
                   <span className="text">
                     Responded to need
-                    <a href="#">"Volunteer opportunity"</a>
+                  <Link to="*">"Volunteer opportunity"</Link>
                   </span>
                 </li>
                 <li className="feed-item feed-item-success">
@@ -738,7 +739,7 @@ const Sidebar2 = () => {
                   </time>
                   <span className="text">
                     Added an interest
-                    <a href="#">"Volunteer Activities"</a>
+                    <Link to="#">"Volunteer Activities"</Link>
                   </span>
                 </li>
                 <li className="feed-item feed-item-info">
@@ -747,7 +748,7 @@ const Sidebar2 = () => {
                   </time>
                   <span className="text">
                     Joined the group
-                    <a href="single-group.php">"Boardsmanship Forum"</a>
+                    <Link to="*">"Boardsmanship Forum"</Link>
                   </span>
                 </li>
                 <li className="feed-item feed-item-warning">
@@ -756,7 +757,7 @@ const Sidebar2 = () => {
                   </time>
                   <span className="text">
                     Responded to need
-                    <a href="#">"In-Kind Opportunity"</a>
+                    <Link to="*">"In-Kind Opportunity"</Link>
                   </span>
                 </li>
                 <li className="feed-item feed-item-danger">
@@ -765,7 +766,7 @@ const Sidebar2 = () => {
                   </time>
                   <span className="text">
                     Created need
-                    <a href="#">"Volunteer Opportunity"</a>
+                    <Link to="*">"Volunteer Opportunity"</Link>
                   </span>
                 </li>
                 <li className="feed-item">
@@ -774,7 +775,7 @@ const Sidebar2 = () => {
                   </time>
                   <span className="text">
                     Attending the event
-                    <a href="single-event.php">"Some New Event"</a>
+                    <Link to="*">"Some New Event"</Link>
                   </span>
                 </li>
               </ol>
@@ -793,40 +794,40 @@ const Sidebar2 = () => {
                     role="tablist"
                   >
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link"
                         id="pills-today"
                         data-bs-toggle="pill"
-                        href="#pills-today"
+                        to="*"
                         role="tab"
                         aria-selected="true"
                       >
                         Today
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link 
                         className="nav-link active"
                         id="pills-week"
                         data-bs-toggle="pill"
-                        href="#pills-week"
+                        to="*"
                         role="tab"
                         aria-selected="false"
                       >
                         Week
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link"
                         id="pills-month"
                         data-bs-toggle="pill"
-                        href="#pills-month"
+                        to="*"
                         role="tab"
                         aria-selected="false"
                       >
                         Month
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

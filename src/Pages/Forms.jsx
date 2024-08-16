@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Forms = () => {
   return (
@@ -8,21 +9,21 @@ const Forms = () => {
           <h3 className="fw-bold mb-3">Forms</h3>
           <ul className="breadcrumbs mb-3">
             <li className="nav-home">
-              <a href="#">
+              <Link to="*">
                 <i className="icon-home" />
-              </a>
+              </Link>
             </li>
             <li className="separator">
               <i className="icon-arrow-right" />
             </li>
             <li className="nav-item">
-              <a href="#">Forms</a>
+              <Link to="*">Forms</Link>
             </li>
             <li className="separator">
               <i className="icon-arrow-right" />
             </li>
             <li className="nav-item">
-              <a href="#">Basic Form</a>
+              <Link to="*">Basic Form</Link>
             </li>
           </ul>
         </div>
@@ -306,22 +307,22 @@ const Forms = () => {
                             Dropdown
                           </button>
                           <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">
+                            <Link className="dropdown-item" to="*">
                               Action
-                            </a>
-                            <a className="dropdown-item" href="#">
+                            </Link>
+                            <Link className="dropdown-item" to="*">
                               Another action
-                            </a>
-                            <a className="dropdown-item" href="#">
+                            </Link>
+                            <Link className="dropdown-item" to="*">
                               Something else here
-                            </a>
+                            </Link>
                             <div
                               role="separator"
                               className="dropdown-divider"
                             />
-                            <a className="dropdown-item" href="#">
+                            <Link className="dropdown-item" to="*">
                               Separated link
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

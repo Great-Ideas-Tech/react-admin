@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FaCalendarAlt, FaMap, FaFileAlt, FaEnvelope, FaFileInvoice, FaCreditCard } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const QuickActionsDropdown = ({ show, handleClose }) => (
   <div
@@ -23,12 +24,12 @@ const QuickActionsDropdown = ({ show, handleClose }) => (
         { icon: <FaFileInvoice />, label: 'Invoice', bg: 'bg-indigo-500' },
         { icon: <FaCreditCard />, label: 'Payments', bg: 'bg-purple-500' }
       ].map(({ icon, label, bg }) => (
-        <a href="#" key={label} className="flex flex-col items-center text-center" onClick={handleClose}>
+        <Link to="#" key={label} className="flex flex-col items-center text-center" onClick={handleClose}>
           <div className={`${bg} text-white p-4 rounded-full hover:bg-opacity-90`}>
             {icon}
           </div>
           <span className="mt-2 text-sm text-gray-800">{label}</span>
-        </a>
+        </Link>
       ))}
     </div>
   </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Icons from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Fontawesome = () => {
   // Get all icon names that start with 'fa'
@@ -23,21 +24,21 @@ const Fontawesome = () => {
           <h3 className="fw-bold mb-3">Icons</h3>
           <ul className="breadcrumbs mb-3">
             <li className="nav-home">
-              <a href="#">
+              <Link to="*">
                 <FontAwesomeIcon icon={Icons.faHome} />
-              </a>
+              </Link>
             </li>
             <li className="separator">
               <FontAwesomeIcon icon={Icons.faArrowRight} />
             </li>
             <li className="nav-item">
-              <a href="#">Base</a>
+              <Link to="*">Base</Link>
             </li>
             <li className="separator">
               <FontAwesomeIcon icon={Icons.faArrowRight} />
             </li>
             <li className="nav-item">
-              <a href="#">Line Awesome</a>
+              <Link to="*">Line Awesome</Link>
             </li>
           </ul>
         </div>
