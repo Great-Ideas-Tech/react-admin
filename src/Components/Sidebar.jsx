@@ -12,7 +12,7 @@ const Sidebar = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
     return (
-        <div className="sidebar" style={{ color: '#fff' }}>
+        <div className="sidebar" style={{ color: '#fff',width:'100'}}>
             <div className="sidebar-logo">
                 {/* Logo Header */}
                 <div className="logo-header" style={{ padding: '10px', textAlign: 'center', background: 'var(--header-logo-bg)' }}>

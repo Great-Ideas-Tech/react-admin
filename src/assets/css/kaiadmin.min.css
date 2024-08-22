@@ -487,7 +487,7 @@ body {
 
 .main-panel {
    position: relative;
-   width: calc(100% - 265px);
+   width: calc(100% - 255px);
    height: 100vh;
    min-height: 100%;
    float: right;
@@ -495,7 +495,7 @@ body {
 }
 
 .main-panel>.container {
-   min-height: calc(100% - 123px);
+   min-height: calc(100% - 113px);
    margin-top: 69px;
    overflow: hidden;
    width: 100%;
@@ -505,7 +505,7 @@ body {
 
 .main-panel>.container-full {
    padding: 0 !important;
-   min-height: calc(100% - 123px);
+   min-height: calc(100% - 113px);
    margin-top: 70px;
    overflow: hidden;
    width: 100%;

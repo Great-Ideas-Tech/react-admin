@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const QuickActionsDropdown = ({ show, handleClose }) => (
   <div
     style={{ zIndex: '999' }}
-    className={`absolute right-0 mx-8 mt-7 w-80 bg-white border rounded-b-lg border-gray-300 rounded-lg shadow-lg transition-all duration-300 transform ${
+    className={`absolute ml-10  right-0 mx-0 mt-8 w-80 bg-white border rounded-b-lg border-gray-300 rounded-lg shadow-lg transition-all duration-300 transform ${
       show ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
     }`}
     onClick={handleClose}

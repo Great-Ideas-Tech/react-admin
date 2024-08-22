@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer ">
   <div className="container-fluid d-flex justify-content-between">
     <nav className="pull-left">
       <ul className="nav">
